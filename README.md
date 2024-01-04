@@ -1,2 +1,2 @@
 # IMC
-Site para cálculo do IMC
+Site para calculo do IMC
