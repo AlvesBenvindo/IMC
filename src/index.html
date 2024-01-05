@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saiba seu IMC</title>
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <title>Saiba o seu IMC</title>
 </head>
 <body>
     
-    <div id="div"></div>
+    <section id="form">
+        <label class="labelForm" for="peso">Digite o seu peso em quilogramas</label>
+        <input id="peso" class="inputForm" type="number" placeholder="Ex: 25.0">
+
+        <label class="labelForm" for="altura">Digite a sua altura em metros</label>
+        <input id="altura" class="inputForm" type="number" placeholder="Ex: 1.80">
+
+        <input type="button" value="Resultado">
+    </section>
+    
+    <section class="result" id="result">
+        
+    </section>
 
     <script src="./index.js"></script>
 </body>
