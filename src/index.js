@@ -1,8 +1,20 @@
 
+let peso = document.getElementById("peso");
 
-let altura = Number(document.getElementById("peso").innerHTML);
+let altura = document.getElementById("altura");
 
-let peso = Number(document.getElementById("altura").innerHTML);
+let calcular = document.getElementById("form");
 
-const IMC = peso / (altura * altura);
-document.getElementById("resultado").innerHTML = `O seu IMC = ${IMC}`;
+calcular.addEventListener( "submit", (event) => {
+
+  event.preventDefault();
+
+  const IMC = peso.value / (altura.value * altura.value);
+
+  document.getElementById("resultado").innerHTML = `O seu IMC = ${IMC}`;
+
+})
+
+
+
+

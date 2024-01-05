@@ -7,20 +7,36 @@
     <title>Saiba o seu IMC</title>
 </head>
 <body>
-    
-    <section id="form">
-        <label class="label-form" for="peso">Digite o seu peso em quilogramas</label>
-        <input id="peso" class="input-form" type="number" placeholder="Ex: 25.0">
+    <main id="container">
+        <div id="header">
+            <h2>
+                Calucule aqui o seu IMC
+            </h2>
+        </div>
+        <section class="formulario">
+            <form id="form" action="submit">
+                <div class="form-control">
+                    <label for="peso">Digite o seu peso em quilogramas</label>
+                    <input id="peso" type="text" placeholder="Ex: 25.0">
+                    <small></small>
+                </div>
 
-        <label class="label-form" for="altura">Digite a sua altura em metros</label>
-        <input id="altura" class="input-form" type="number" placeholder="Ex: 1.80">
 
-        <input type="button" value="Resultado">
-    </section>
-    
-    <section class="result" id="result">
+                <div class="form-control">
+                    <label for="altura">Digite a sua altura em metros</label>
+                    <input id="altura" type="text" placeholder="Ex: 1.80">
+                </div>
+            
+                <button type="submit">Calcular</button>
+            
+            </form>
+        </section>
         
-    </section>
+        <section class="resultado" id="resultado">
+            
+        </section>
+    </main>
+    
 
     <script src="./index.js"></script>
 </body>
